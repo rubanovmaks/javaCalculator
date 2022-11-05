@@ -8,14 +8,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число:");
+        // Обьявляем переменные
         int value1;
-        value1 = scanner.nextInt();
-        System.out.println("Введите второе число:");
         int value2;
-        value2 = scanner.nextInt();
         int operator;
         int result;
+        System.out.println("Введите число:");
+        value1 = scanner.nextInt();
+        System.out.println("Введите второе число:");
+        value2 = scanner.nextInt();
         System.out.println("Введите оператор:");
         System.out.println("1. Сложение");
         System.out.println("2. Вычитание");
@@ -25,6 +26,7 @@ public class Main {
         System.out.println("6. Проверка на равенство");
         System.out.println("7. Проверка на неравенство");
         operator = scanner.nextInt();
+        // Проверка введенного оператора
         switch (operator) {
             case 1:
                 result = value1 + value2;
@@ -33,31 +35,45 @@ public class Main {
             case 2:
                 result = value1 - value2;
                 System.out.println("Результат: " + result);
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
             case 3:
                 result = value1 * value2;
                 System.out.println("Результат: " + result);
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
             case 4:
                 result = value1 / value2;
                 System.out.println("Результат: " + result);
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
             case 5:
                 result = value1 % value2;
                 System.out.println("Результат: " + result);
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
             case 6:
                 boolean result1;
                 result1 = value1 == value2;
                 System.out.println("Результат: " + result1);
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
             case 7:
                 boolean result2;
                 result2 = value1 != value2;
                 System.out.println("Результат: " + result2);
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
             default:
                 System.out.println("error");
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
         }
     }
