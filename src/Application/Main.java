@@ -32,12 +32,15 @@ public class Main {
                 break;
             default:
                 System.out.println("error");
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
         }
         System.out.println("Выберите действие:");
         System.out.println("1. Ввести число");
         System.out.println("2. Дать выбор компьютеру");
         question2 = scanner.nextInt();
+        // Проверка введенной команды
         switch (question2) {
             case 1:
                 System.out.println("Введите число:");
@@ -48,6 +51,8 @@ public class Main {
                 break;
             default:
                 System.out.println("error");
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
         }
         System.out.println("Введите оператор:");
@@ -64,6 +69,8 @@ public class Main {
             case 1:
                 result = value1 + value2;
                 System.out.println("Результат: " + result);
+                System.out.println();
+                System.out.println("Created by rubanovmaks");
                 break;
             case 2:
                 result = value1 - value2;
