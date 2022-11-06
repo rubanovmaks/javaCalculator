@@ -4,19 +4,52 @@
 package Application;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+        // Обьявляем обьекты
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
         // Обьявляем переменные
-        int value1;
-        int value2;
+        int value1 = 0;
+        int value2 = 0;
         int operator;
         int result;
-        System.out.println("Введите число:");
-        value1 = scanner.nextInt();
-        System.out.println("Введите второе число:");
-        value2 = scanner.nextInt();
+        int question;
+        int question2;
+        System.out.println("Выберите действие:");
+        System.out.println("1. Ввести число");
+        System.out.println("2. Дать выбор компьютеру");
+        question = scanner.nextInt();
+        switch (question) {
+            case 1:
+                System.out.println("Введите число:");
+                value1 = scanner.nextInt();
+                break;
+            case 2:
+                value1 = random.nextInt();
+                break;
+            default:
+                System.out.println("error");
+                break;
+        }
+        System.out.println("Выберите действие:");
+        System.out.println("1. Ввести число");
+        System.out.println("2. Дать выбор компьютеру");
+        question2 = scanner.nextInt();
+        switch (question2) {
+            case 1:
+                System.out.println("Введите число:");
+                value2 = scanner.nextInt();
+                break;
+            case 2:
+                value2 = random.nextInt();
+                break;
+            default:
+                System.out.println("error");
+                break;
+        }
         System.out.println("Введите оператор:");
         System.out.println("1. Сложение");
         System.out.println("2. Вычитание");
