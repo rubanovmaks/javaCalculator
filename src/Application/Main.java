@@ -14,10 +14,10 @@ public class Main {
         // Обьявляем переменные
         int value1 = 0;
         int value2 = 0;
-        int operator;
+        byte operator;
         int result;
-        int question;
-        int question2;
+        byte question;
+        byte question2;
         System.out.println("Выберите действие:");
         System.out.println("1. Ввести число");
         System.out.println("2. Дать выбор компьютеру");
