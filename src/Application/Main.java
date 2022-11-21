@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Выберите действие:");
         System.out.println("1. Ввести число");
         System.out.println("2. Дать выбор компьютеру");
-        question = scanner.nextInt();
+        question = scanner.nextByte();
         switch (question) {
             case 1:
                 System.out.println("Введите число:");
@@ -39,7 +39,7 @@ public class Main {
         System.out.println("Выберите действие:");
         System.out.println("1. Ввести число");
         System.out.println("2. Дать выбор компьютеру");
-        question2 = scanner.nextInt();
+        question2 = scanner.nextByte();
         // Проверка введенной команды
         switch (question2) {
             case 1:
@@ -63,7 +63,7 @@ public class Main {
         System.out.println("5. Остаток от деления");
         System.out.println("6. Проверка на равенство");
         System.out.println("7. Проверка на неравенство");
-        operator = scanner.nextInt();
+        operator = scanner.nextByte();
         // Проверка введенного оператора
         switch (operator) {
             case 1:
